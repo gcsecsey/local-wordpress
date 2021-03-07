@@ -1,0 +1,1 @@
+-- Move an SQL dump file into this file to initialize the DB with it.

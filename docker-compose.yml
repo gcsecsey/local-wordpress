@@ -13,7 +13,7 @@ services:
       WORDPRESS_DB_PASSWORD: pass
       WORDPRESS_DB_NAME: local-wp
     volumes:
-      - wordpress:/var/www/html
+      - ./src:/var/www/html
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
 
   db:
@@ -28,7 +28,7 @@ services:
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
       - db:/var/lib/mysql
-      - ./example1.sql:/docker-entrypoint-initdb.d/example1.sql
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
 
 volumes:
   wordpress:

@@ -1,0 +1,1 @@
+Move the contents of a wordpress installation into this folder to initialize.
