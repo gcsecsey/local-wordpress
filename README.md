@@ -47,10 +47,6 @@ To delete all existing instances, you can run:
 docker-compose down -v
 ```
 
-# Debugging
-
-## MySQL
-
 # Tweaks
 
 ## Upload limit
